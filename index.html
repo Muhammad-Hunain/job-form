@@ -18,22 +18,34 @@
           Apply for Courier service 
       </div>
 
-
+      <!-- <form action="response.html" method="get"> -->
         <div class="row">
                  <div class=" mt-5 form">
-                <input class="form-control form-control-lg mt-5" id="name" type="text" placeholder="Name"
-                    aria-label=".form-control-lg example">
-                <input class="form-control form-control-lg mt-5" id="email" type="Email" placeholder="Email"
-                    aria-label=".form-control-lg example">
-                <input class="form-control form-control-lg mt-5  mb-5" type="file"  id="myfile" name="myfile">
-                <a href="#" class="btn btn-lg btn-danger" onclick="submit()">Submit</a>
-            </div>     
+                <input class="form-control form-control-lg my-5" id="name" type="text" placeholder="Name"
+                    aria-label=".form-control-lg example" required="required">
+                <input class="form-control form-control-lg mt-5" id="email" type="email" placeholder="Email"
+                    aria-label=".form-control-lg example" required="required">
+                <!-- <input class="form-control form-control-lg mt-4" id ="select" type="file" onclick="select()"  id="myfile" name="myfile" required="required"> -->
+                <!-- <a href="#" class="btn btn-lg btn-danger my-4" id="upload" disabled   onclick="upload()">upload</a><br>-->
+                       
+            <button id ="select" class="btn btn-lg my-5" onclick="select()">Select Your CV here</button>
+            <button id ="upload" class="btn btn-lg my-5" onclick="upload()" disabled>upload</button>
+            <br>
+            <a href="#" class="btn btn-lg btn-danger my-2" id="select" onclick="submit()">Submit</a>
+
+                    </div>     
         </div>
     </div>
+</form> 
 
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script> -->
     <script src="firbase.js"></script>
     <script src="app.js"></script>
 </body>
